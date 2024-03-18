@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#c4ffea 0%, #ff9c85, #bdbcee 100%);
+}
+.available{
+    width: 100%;
+    padding: 100px 0;
+}
+h1{
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #a363aa;
+}
+#h1span{
+    color: #a363aa;
+    margin-left: 15px;
+}
+ .av-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    background: white;
+}
+.av-card{
+    width: 352px;
+    height: 440px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.av-image{
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ .av-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+} 
+.av-image:hover img{
+    transform: scale(1.1);
+} 
+.av-info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #a363aa;
+} 
+.av-info h3{
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+} 
+.av-icon{
+    color: green;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.av-btn{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    justify-content: center;
+    color: #fff;
+    margin: 0 80px;
+    border-radius: 30px;
+    padding: 7px;
+    transition: 0.3s;
+}.av-btn:hover{
+    background: #000;
+}  
+a{
+    text-decoration: none;
+}
+.av{
+    display: flex;
+    align-items: center;
+    background: #a363aa;
+    justify-content: center;
+    color: #fff;
+    margin: 0 80px;
+    border-radius: 30px;
+    padding: 7px;
+    transition: 0.3s;
+    width: 200px;
+    margin: 20px 700px;
+}
+.av:hover{
+    background: #000;
+}  
+
+@media (max-width:650px){
+    .av-box{
+        display: block;
+    }
+    .av{
+        margin: 0 80px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
